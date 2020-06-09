@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <%= stylesheet_link_tag "style"%>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Registrar Estacionamientos</title>
+  </head>
+    <body>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <img class="img-logo" src="<%= image_path('logo.png') %>"  >
+          <a class="navbar-brand title" href="#">ARKING</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              </li>
+              <li class="nav-item">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">PERFIL</button>
+              </li>
+              <li class="nav-item active">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">ESTACIONAMIENTOS</button>
+              </li>
+              <li class="nav-item ">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">SERVICIOS</button>
+              </li>
+              <li class="nav-item">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">ALQUILERES</button>
+              </li>
+              <li class="nav-item">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">SALIR</button
+              </li>
+            </ul>
+          </div>
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">LOG OUT</button>
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">ESTADO</button>
+      </nav>
+        <div class="container-fluid container-publicidad">
+      <h3 class="mb-0 title">El registro de usuario es: </h3>
+      <div class="">
+        <p></p>
+        <div class="container-fluid container-publicidad">
+        <% if @nombre %>
+
+        <h4>
+
+          El nombre del producto es: <%=@nombre%> <br/>
+
+
+
+        </h4>
+
+       <% else %>
+
+        <% end %>
+      </div>

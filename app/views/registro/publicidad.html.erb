@@ -1,0 +1,584 @@
+<html lang="en"><head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+    <style>
+
+
+    .espacio {
+        margin-right: 5%;
+    }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .colortext{
+        color:white;
+      }
+
+
+      .modal-backdrop.in {
+    opacity: 0.7;
+}
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color:white;">
+
+
+        <header>
+
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                  <a class="navbar-brand" href="#">SISTEMA ESTACIONAMIENTOS</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+
+                      </li>
+                      <li class="nav-item">
+                      <button class="btn btn-outline-light my-2 my-sm-0"  style="border:solid 0px;" type="submit">PERFIL</button>
+                      </li>
+                      <li class="nav-item">
+                      <button class="btn btn-outline-light my-2 my-sm-0"  style="border:solid 0px;" type="submit">ESTACIONAMIENTOS</button>
+                      </li>
+                      <li class="nav-item">
+                      <button class="btn btn-outline-light my-2 my-sm-0"   style="border:solid 0px;" type="submit">SERVICIOS</button>
+                      </li>
+                      <li class="nav-item">
+                      <button class="btn btn-outline-light my-2 my-sm-0"  style="border:solid 0px;" type="submit">ALQUILERES</button>
+                      </li>
+                      <li class="nav-item">
+                          <button class="btn btn-outline-light my-2 my-sm-0"  style="border:solid 0px;" type="submit">SALIR</button>
+                          </li>
+                    </ul>
+
+
+
+
+
+                  </div>
+
+
+                  <button class="btn btn-outline-light my-2 my-sm-0"   style="border:solid 0px;" type="submit">Iniciar Sesión</button>
+                  <button class="btn btn-outline-light my-2 my-sm-0"   style="border:solid 0px;" type="submit">Registrate</button>
+
+
+
+              </nav>
+
+
+
+            </header>
+
+
+
+
+
+
+        <div class="container light" >
+                <div class="row" style="border: solid 1px #ccc;">
+                  <div class="col-sm-2" style="border-right: solid 1px #ccc; padding:0px; ">
+                        <div class="list-group">
+
+
+                                <button class="btn btn-lg btn-light col-xs-12 active" style="border-radius:0px;   height:60px;  padding-top:18px; padding-bottom:20px;">
+
+                                     <span  style="float:left;  "  class="material-icons pull-left"> home </span>
+                                     <span style=" ">Inicio</span>
+                                </button>
+
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px;   height:60px;  padding-top:18px; padding-bottom:20px;">
+
+                                     <span style="float:left;  " class="material-icons ">settings_phone</span>
+                                     <span > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publicidad</span>
+                                </button>
+
+
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+                                <button class="btn btn-lg btn-light col-xs-12" style="border-radius:0px; padding:10px;height:40px; "> </button>
+
+                        </div>
+                  </div>
+
+
+                  <div class="col-sm-10" style="background-color:#ffffff;">
+
+                        <div class="row" style="border-bottom: solid 1px #ccc;">
+                                <div class="col-12" style="padding:2%;">
+                                    <h3>Administración de Publicidad</h3>
+                                </div>
+                         </div>
+
+
+                        <div class="row">
+                                <div class="col-4" style="min-height:500px;  border-right: solid 1px #ccc;  padding:0px; background-color: white;  ">
+
+
+                                        <div class="container">
+                                                <div class="row">
+                                                  <div class="col-12">
+                                                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-outline-dark" style="margin-top:10px; width: 40px;  float:right;  margin-bottom:10px;">+</button>
+
+
+
+
+
+
+
+
+
+
+                                                  </div>
+
+
+                                                  <div class="col-12">
+                                                        <div class="list-group">
+
+
+                                                                <a href="#" class="list-group-item  list-group-item-action" style="border-bottom: solid 1px #000;">
+                                                                  <div class="d-flex w-100 justify-content-between">
+                                                                    <h5 class="mb-1">Publicidad 1</h5>
+                                                                    <small class="text-muted">25/05/2020</small>
+                                                                  </div>
+                                                                  <p class="mb-1">Contenido de publicidad </p>
+                                                                 </a>
+
+                                                                <a href="#" class="list-group-item  list-group-item-action"  style="border-bottom: solid 1px #000;">
+                                                                  <div class="d-flex w-100 justify-content-between">
+                                                                    <h5 class="mb-1">Publicidad 2</h5>
+                                                                    <small class="text-muted">25/05/2020</small>
+                                                                  </div>
+                                                                  <p class="mb-1">Contenido de publicidad.</p>
+                                                                 </a>
+
+
+
+                                                                <a href="#" class="list-group-item list-group-item-action"  style="border-bottom: solid 1px #ccc;">
+                                                                        <div class="d-flex w-100 justify-content-between">
+                                                                          <h5 class="mb-1">Publicidad 2</h5>
+                                                                          <small class="text-muted">25/05/2020</small>
+                                                                        </div>
+                                                                        <p class="mb-1">Contenido de publicidad.</p>
+                                                                       </a>
+
+
+
+
+                                                                <a href="#" class="list-group-item list-group-item-action"  style="border-bottom: solid 1px #ccc;">
+                                                                        <div class="d-flex w-100 justify-content-between">
+                                                                          <h5 class="mb-1">Publicidad 2</h5>
+                                                                          <small class="text-muted">25/05/2020</small>
+                                                                        </div>
+                                                                        <p class="mb-1">Contenido de publicidad.</p>
+                                                                       </a>
+
+
+
+
+                                                                <a href="#" class="list-group-item list-group-item-action"  style="border-bottom: solid  1px #ccc;">
+                                                                        <div class="d-flex w-100 justify-content-between">
+                                                                          <h5 class="mb-1">Publicidad 2</h5>
+                                                                          <small class="text-muted">25/05/2020</small>
+                                                                        </div>
+                                                                        <p class="mb-1">Contenido de publicidad.</p>
+                                                                       </a>
+
+
+
+
+                                                              </div>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+
+
+                                </div>
+
+                                <div class="col-8" style="min-height:500px; padding:27px; ">
+
+                                    <div class="row">
+                                        <h4 style="margin-bottom: 9px;">Páginas a mostrar   <br>  </h4>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <table class="table table-bordered table-scroll  table-striped" style="background-color:white; height:100px; overflow-y: auto;">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width:180px;"># Código de página</th>
+                                                        <th scope="col">Descripción</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <th align="center" style="text-align:center;" scope="row">01</th>
+                                                            <td>página principal</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">02</th>
+                                                            <td>página cliente</td>
+                                                    </tr>
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">03</th>
+                                                            <td>página dueño</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">&nbsp;</th>
+                                                            <td> </td>
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">&nbsp;&nbsp;&nbsp;</th>
+                                                            <td> </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">&nbsp;&nbsp;&nbsp;</th>
+                                                            <td> </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th style="text-align:center;" scope="row">&nbsp;&nbsp;&nbsp;</th>
+                                                            <td> </td>
+                                                        </tr>
+
+
+
+
+
+
+                                                    </tbody>
+                                                </table>
+
+
+                                                <div class="card" style="width:100%; height:400px; background-color:#ccc;">
+                                                        <div class="card-body">
+                                                          Visualizar datos.
+                                                        </div>
+                                                      </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                        </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+
+
+
+              <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 bg-secondary">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase colortext" >Sistema de Etsacionamientos</h5>
+              <p class="colortext">Desarrollo de sistema de reservas de estacionamientos y control de publicidad.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase colortext">Sistema</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a class="colortext" href="#!">Perfil</a>
+                </li>
+                <li>
+                  <a class="colortext" href="#!">Estacionamientos</a>
+                </li>
+                <li>
+                <a class="colortext" href="#!">Alquileres</a>
+              </li>
+
+
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase colortext">Control</h5>
+
+              <ul class="list-unstyled">
+              <li>
+              <a class="colortext" href="#!">Publicidad</a>
+            </li>
+            <li>
+              <a class="colortext" href="#!">Publicaciones</a>
+            </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 colortext">© 2020 Copyright:
+          <a clas="colortext" href="https://mdbootstrap.com/"> sistema dereservadeestacionamientos.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" role="dialog" aria-labelledby="exampleModalLabel"    aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="padding: 5%;">
+
+
+
+                    <form>
+
+
+                            <div class="form-group row">
+
+                              <h3 style="float:both; margin:auto;"><br>Nuevo Anuncio<br><br></h3>
+
+                            </div>
+
+
+                            <div class="form-group row">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Titulo</label>
+                              <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">Tarifa</label>
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Fecha Inicio</label>
+                                    <div class="col-sm-10">
+                                            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Fecha Fin</label>
+                                        <div class="col-sm-10">
+                                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                            </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Contenido</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+<!--
+
+                            <fieldset class="form-group">
+                              <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                      First radio
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                      Second radio
+                                    </label>
+                                  </div>
+                                  <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                    <label class="form-check-label" for="gridRadios3">
+                                      Third disabled radio
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </fieldset>
+
+                            <div class="form-group row">
+                              <div class="col-sm-2">Checkbox</div>
+                              <div class="col-sm-10">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                  <label class="form-check-label" for="gridCheck1">
+                                    Example checkbox
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                        -->
+                            <div class="form-group row">
+                              <div class="col-sm-12"><br>
+                                <button type="submit" class="btn btn-primary btn-lg" style="float: left; ">Guardar</button>
+
+                                <button type="submit" class="btn btn-primary btn-lg" style="float: right; ">Cancelar</button>
+
+                            </div>
+                            </div>
+
+
+                          </form>
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+      <script>
+
+
+      $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+});
+
+
+
+
+
+
+
+var ss = $.LiveAddress({
+    key: '8140491234758226',
+    waitForStreet: true,
+    debug: true,
+    target: "US",
+    addresses: [{
+    	id: "myID",
+    	country: "#country",
+      address1: "#street",
+      locality: "#city",
+      administrative_area: "#state",
+      postal_code: "#ZIP"
+    }]
+});
+
+ss.deactivate("myID");
+
+$("#myModal").on("shown.bs.modal", function () {
+   // Reactivate the form when not hidden
+    ss.activate("myID");
+    // This line helps to make sure the checkmark goes back to where it belongs
+    $(window).resize();
+});
+
+$("#myModal").on("hide.bs.modal", function() {
+// Deactivate the form when hidden
+    ss.deactivate("myID");
+});
+
+
+
+
+
+      </script>
+</body></html> 
